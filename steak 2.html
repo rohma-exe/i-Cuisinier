@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-Cuisinier App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #DFDFDF;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .status-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #3F3D56;
+            color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-bar i {
+            margin: 0 5px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 430px;
+            height: 100%;
+            max-height: 932px;
+            background-color: #DFDFDF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Allow scrolling if content overflows */
+            position: relative;
+            margin-top: 10px; /* Decreased margin top */
+            margin-bottom: 10px; /* Decreased margin bottom */
+        }
+
+        .splash {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100px;
+            height: 100px;
+            background-image: url('file:///E:/ellipse2.png'); /* Path to your Ellipse 2 image */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .box {
+            width: 70%;
+            background-color: #384E7A;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #E6E6E6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box img {
+            max-width: 80px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .description {
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #3F3D56;
+        }
+
+        .watch-video-button {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #384E7A;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .home-button {
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-bottom: 5px; /* Added margin bottom */
+            margin-top: 5px; /* Added margin top */
+        }
+
+        .home-button i {
+            color: #384E7A;
+            font-size: 24px;
+        }
+
+        .ingredients {
+            width: 70%;
+            text-align: left;
+            margin-bottom: 5px; /* Adjusted margin bottom */
+        }
+
+        .ingredients h3 {
+            color: #384E7A;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            margin-bottom: 5px;
+            color: #3F3D56;
+            font-size: 14px;
+        }
+
+        .directions {
+            width: 70%;
+            text-align: left;
+            margin-bottom: 20px; /* Adjusted margin bottom */
+        }
+
+        .directions h3 {
+            color: #384E7A;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .directions ol {
+            padding-left: 20px;
+        }
+
+        .directions ol li {
+            margin-bottom: 10px;
+            color: #3F3D56;
+            font-size: 14px;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .back-button i {
+            color: #384E7A;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="screen">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+    <div class="container">
+        <a href="home.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="splash"></div>
+        <div class="box">
+            <h2>Steak</h2>
+            <img src="file:///E:/steak.jpg" alt="Steak">
+        </div>
+        <div class="description">
+            Masterfully grilled to a flawless medium-rare, complemented by a whisper of garlic and shallots, delivering an indulgent and refined gastronomic experience.
+        </div>
+        <div class="watch-video-button">Watch Video</div>
+
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1. Salt</li>
+                <li>2. Prime Steak</li>
+                <li>3. Black Pepper</li>
+                <li>4. Olive Oil</li>
+            </ul>
+        </div>
+
+        <div class="directions">
+            <h3>Directions</h3>
+            <ol>
+                <li>On a clean, flat surface, season the steak generously with salt and freshly ground black pepper.</li>
+                <li>Drizzle olive oil over the steak, ensuring it's evenly coated.</li>
+                <li>Preheat a skillet over high heat until it's smoking hot.</li>
+                <li>Carefully place the steak in the skillet, searing each side for 3-4 minutes.</li>
+                <li>Reduce heat to medium and continue cooking to your desired doneness.</li>
+            </ol>
+        </div>
+    </div>
+
+    <a href="home.html" class="home-button">
+        <i class="fas fa-home"></i>
+    </a>
+</body>
+</html>
+
+    
+
+    
+
+

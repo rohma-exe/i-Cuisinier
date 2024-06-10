@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i-Cuisinier App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #DFDFDF;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .status-bar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #3F3D56;
+            color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-bar i {
+            margin: 0 5px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 430px;
+            height: 100%;
+            max-height: 932px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header a {
+            color: #3F3D56;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .splash {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100px;
+            height: 100px;
+            background-image: url('file:///E:/ellipse2.png'); /* Path to your Ellipse 2 image */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .box {
+            width: 70%;
+            background-color: #384E7A;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #E6E6E6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box img {
+            max-width: 80px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .description {
+            margin-top: 30px;
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #3F3D56;
+        }
+
+        .rating-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .rating-container h3 {
+            color: #3F3D56;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rating i {
+            color: #000000; /* Black color */
+            margin-right: 5px;
+        }
+
+        .button {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-bottom: 10px;
+            
+        }
+
+        .customize {
+            background-color: #384E7A;
+            
+        }
+        .customize a{
+            background-color: #384E7A;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .customize a:hover{
+            text-decoration: underline;
+        }
+
+        .cook-mode {
+            background-color: #384E7A;
+        }
+
+        .home-button {
+            margin-top: 50px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .home-button i {
+            color: #384E7A;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="screen">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="splash"></div>
+        <div class="box">
+            <h2>Pasta</h2>
+            <img src="pasta.jpg" alt="Pasta">
+        </div>
+        <div class="description">
+            Exquisite linguine, expertly al dente, enveloped in a velvety tomato reduction infused with aromatic herbs, delivering a refined Italian culinary experience.
+        </div>
+        <div class="rating-container">
+            <h3>Rating</h3>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <button class="button customize"><a href="pasta 2.html">Customize Recipe</a></button>
+        <button class="button cook-mode">Easy Cook Mode</button>
+        <a href="homepage.html" class="home-button"><i class="fas fa-home"></i></a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
